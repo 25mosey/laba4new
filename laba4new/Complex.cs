@@ -25,11 +25,11 @@ namespace laba4new
         }
         public Complex Multi(Complex B)
         {
-            return new Complex(this.X * B.X-this.Y*B.Y, this.X*B.X + B.Y);
+            return new Complex(this.X * B.X - this.Y * B.Y, this.X * B.X + this.Y * B.Y);
         }
         public double Divis()
         {
-            return A / B;
+            return new Complex(this.X * B.X + this.Y * B.Y, this.Y * B.Y - this.X * B.X)/(Math.Sqrt(this.X) + Math.Sqrt(this.Y);
         }
         public double Equ()
         {
